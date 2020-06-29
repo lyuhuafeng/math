@@ -11,7 +11,7 @@
 
 用哪个方案呢？分析到这里，已经不太像三年级的题目了。
 
-在网上搜了搜，发现这个题目其实有一定名气，英文世界里有不少名字，如 `the Bridge-Crossing Puzzle`, `the Bridge and Torch Problem`, 等等。它最早出现在 1981 年的一本书里。
+在网上搜了搜，发现这个题目其实有一定名气，最早出现在 1981 年的一本书里，在英文世界里有多个名字，如 `the Bridge-Crossing Puzzle`, `the Bridge and Torch Problem`, 等等。
 
 给出终极解法的是[这篇 2002 年 8 月的 paper](http://www.inf.fu-berlin.de/inst/ag-ti/members/uploads/tx_tipublications/Crossing_the_bridge_at_night.pdf)，从 4 个人推广到一般形式的 N 个人，给出了解法和形式化的数学证明。数学证明用了图论，要看明白还是得花点时间……咱们还是直接上结论吧：
 
@@ -60,7 +60,9 @@
 
 每一轮过后，最慢的两个人过了河，还需要过河的人少了两个。进入下一轮。以此类推。
 
-回到小学三年级题目上来，N = 4，只需要一轮就能 reduce 到 N = 2 的情况。
+但，还是不很确定，三年级娃是否能看明白并记住……
+
+回到本文开头的题，N = 4，只需要一轮就能 reduce 到 N = 2 的情况。
 * 如果 t<sub>2</sub> > (t<sub>1</sub> + t<sub>3</sub>) / 2，顺序为: (t<sub>1</sub>, t<sub>4</sub>), t<sub>1</sub>, (t<sub>1</sub>, t<sub>3</sub>), t<sub>1</sub>, (t<sub>1</sub>, t<sub>2</sub>). 总时间为 2t<sub>1</sub> + t<sub>2</sub> + t<sub>3</sub> + t<sub>4</sub>.
 * 如果 t<sub>2</sub> < (t<sub>1</sub> + t<sub>3</sub>) / 2，顺序为: (t<sub>1</sub>, t<sub>2</sub>), t<sub>1</sub>, (t<sub>3</sub>, t<sub>4</sub>), t<sub>2</sub>, (t<sub>1</sub>, t<sub>2</sub>). 总时间为 t<sub>1</sub> + 3t<sub>2</sub> + t<sub>4</sub>.
 
@@ -72,4 +74,4 @@
 
 完毕。
 
-However，这篇 (stackoverflow 上的讨论)[https://stackoverflow.com/questions/1144207/bridge-crossing-puzzle] 里，有人还提到了更一般的情况，每次可以过多个人而不是两个人，并给出了类似，但没有证明。这就更不像三年级牛娃能解的题了，就先打住。
+However，这篇 (stackoverflow 上的讨论)[https://stackoverflow.com/questions/1144207/bridge-crossing-puzzle] 里，有人还提到了更一般的情况，每次可以过多个人而不是两个人，并给出了类似的算法，但没有证明。这就更不像三年级牛娃能解的题了，就先打住吧。
