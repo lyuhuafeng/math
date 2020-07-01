@@ -13,7 +13,7 @@
 
 在网上搜了搜，发现这个题目其实有一定名气，最早出现在 1981 年的一本书里，在英文世界里有多个名字，如 `the Bridge-Crossing Puzzle`, `the Bridge and Torch Problem`, 等等。
 
-给出终极解法的是[这篇 2002 年 8 月的 paper](http://www.inf.fu-berlin.de/inst/ag-ti/members/uploads/tx_tipublications/Crossing_the_bridge_at_night.pdf)，从 4 个人推广到一般形式的 N 个人，给出了解法和形式化的数学证明。数学证明用了图论，要看明白还是得花点时间……咱们还是直接上结论吧：
+给出终极解法的是[这篇 2002 年 8 月的 paper "Cross the Bridge at Night"](http://page.mi.fu-berlin.de/rote/Papers/pdf/Crossing+the+bridge+at+night.pdf)，从 4 个人推广到一般形式的 N 个人，给出了解法和形式化的数学证明。数学证明用了图论，要看明白还是得花点时间……咱们还是直接上结论吧：
 
 如果有 N 个人要过河。每人单独过桥所用时间从快到慢（数值从小到大）依次为 t<sub>1</sub>, t<sub>2</sub>, ..., t<sub>N</sub>. （后面为了行文方便，也为了便于记忆，t<sub>i</sub> 既表示第 i 个人，也表示该人单独过桥所需时间。）
 
@@ -74,4 +74,4 @@
 
 完毕。
 
-However，这篇 (stackoverflow 上的讨论)[https://stackoverflow.com/questions/1144207/bridge-crossing-puzzle] 里，有人还提到了更一般的情况，每次可以过多个人而不是两个人，并给出了类似的算法，但没有证明。这就更不像三年级牛娃能解的题了，就先打住吧。
+However，这篇 [stackoverflow 上的讨论](https://stackoverflow.com/questions/1144207/bridge-crossing-puzzle) 里，有人还提到了更一般的情况，每次可以过多个人而不是两个人，并给出了类似的算法，但没有证明。这就更不像三年级牛娃能解的题了，就先打住吧。
